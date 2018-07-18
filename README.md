@@ -37,14 +37,20 @@ $ npm install
 $ npm run dev
 ```
 
-## Bundled Output
-In your browser, navigate to: [http://localhost:2000/](http://localhost:2000/)
-
-### For bundled output
+## For Development  version
 
 ```
 $ npm run build
 ```
+
+In your browser, navigate to: [http://localhost:2000/](http://localhost:2000/)
+
+## For bundled output
+
+```
+$ npm run build
+```
+This is the final distribution version of your project located in the /dist folder
 
 ### To restart your project after leaving it
 

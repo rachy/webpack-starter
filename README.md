@@ -1,5 +1,5 @@
 # Webpack 4 Boilerplate for beginners
-A basic webpack 4 boilerplate for beginners to start with any JS/ES6 based project. 
+A basic webpack 4 boilerplate for beginners to start with any JS/ES6 based project. This project uses basic html with scss. It includes working background images in scss as well as file loading in html. Uses Dev Server and Sourcemaps for easy debugging. 
 <br>
 ## Guide
 This basic boilerplate is the final output of this comprehensive write up on Medium. I recommend to read this article to know the insight of how you can configure webpack from scratch.
@@ -37,7 +37,7 @@ $ npm install
 $ npm run dev
 ```
 
-## For Development  version
+## For Development version
 
 ```
 $ npm run build
@@ -45,7 +45,7 @@ $ npm run build
 
 In your browser, navigate to: [http://localhost:2000/](http://localhost:2000/)
 
-## For bundled output
+## For Production version
 
 ```
 $ npm run build

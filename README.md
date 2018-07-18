@@ -24,14 +24,14 @@ $ git clone https://github.com/SJCCodeTalk/webpack-starter.git
 $ cd new-project
 ```
 
-4. Install dependencies
+5. Install dependencies
 
 ```
 $ npm install
 ```
 
 
-5.  Develop locally with webpack-dev-server
+6.  Develop locally with webpack-dev-server
 
 ```
 $ npm run dev

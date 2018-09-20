@@ -2,8 +2,8 @@
 A basic webpack 4 boilerplate for beginners to start with any JS/ES6 based project. This project uses basic html with scss. It includes working background images in scss as well as file loading in html. Uses Dev Server and Sourcemaps for easy debugging. 
 <br>
 ## Guide
-This basic boilerplate is the final output of this comprehensive write up on Medium. I recommend to read this article to know the insight of how you can configure webpack from scratch.
-[Webpack 4 quickstarter: Configure webpack from scratch](https://medium.com/@nirjhor123/webpack-3-quickstarter-configure-webpack-from-scratch-30a6c394038a)
+This basic boilerplate is the final output of this comprehensive write up on Medium, plus several additions. I recommend to read this article to know the insight of how you can configure webpack from scratch.
+[Webpack 3 quickstarter: Configure webpack from scratch](https://medium.com/@nirjhor123/webpack-3-quickstarter-configure-webpack-from-scratch-30a6c394038a)
 <br>
 1. Navigate to the appropriate folder. This example uses the a folder on the desktop called "class projects" folder. NOTE: Start from your home directory "~".
 
@@ -14,7 +14,7 @@ $ cd "desktop/class projects"
 2. Clone the webpack-starter into your "class projects" folder with the following command:
 
 ```
-$ git clone https://github.com/SJCCodeTalk/webpack-starter.git
+$ git clone https://github.com/rachy/webpack-starter.git
 ```
 3. Change the name of webpack-starter to reflect the name of your project
 
@@ -40,7 +40,7 @@ $ npm run dev
 ## For Development version
 
 ```
-$ npm run build
+$ npm run dev
 ```
 
 In your browser, navigate to: [http://localhost:2000/](http://localhost:2000/)

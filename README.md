@@ -8,7 +8,7 @@ This basic boilerplate is the final output of this comprehensive write up on Med
 1. Navigate to the appropriate folder. This example uses the a folder on the desktop called "class projects" folder. NOTE: Start from your home directory "~".
 
 ```
-$ cd "desktop/class projects"
+$ cd "desktop/my-project"
 ```
 
 2. Clone the webpack-starter into your "class projects" folder with the following command:

@@ -1,7 +1,10 @@
 const webpack = require('webpack'),
       path = require('path'),
-      CleanWebpackPlugin = require('clean-webpack-plugin'),
+      StyleLintPlugin = require('stylelint-webpack-plugin'),
+      MiniCssExtractPlugin = require("mini-css-extract-plugin"),
+      //CleanWebpackPlugin = require('clean-webpack-plugin'),
       HtmlWebpackPlugin = require('html-webpack-plugin');
+      //audFile = require('./src/assets/media/horse.ogg');
 
 module.exports = {
   entry: './src/app.js',
@@ -16,9 +19,15 @@ module.exports = {
         test: /\.scss$/,
         include: [path.resolve(__dirname, 'src', 'assets/scss')],
         use: [{
-          loader: "style-loader"
+          loader: "style-loader",
+          options: {
+            sourceMap: true
+          }
         }, {
-          loader: "css-loader"
+          loader: "css-loader",
+          options: {
+            sourceMap: true
+          }
         }, {
           loader: "sass-loader",
           options: {
@@ -29,11 +38,14 @@ module.exports = {
       {
         test: /\.html$/, 
         use: [{
-          loader: "html-loader"
+          loader: "html-loader",
+          options: {
+            attrs: [':src']
+          }
         }]  
       },
       {
-        test: /\.(png|jpg|gif|svg)$/,
+        test: /\.(png|jpg|gif|svg|mp4|mov)$/,
         use: [
           {
             loader: 'file-loader',
@@ -43,27 +55,31 @@ module.exports = {
             }
           }
         ]
-      },
-      /*{
-        test: /\.(mp4|mov)$/,
+      } ,
+      {
+        test: /\.(ogg|mov)$/,
         use: [
           {
-            loader: 'file-loader?mimetype=video/mp4',
+            loader: 'file-loader',
             options: {
               name: '[path][name].[ext]',
               outputPath: ''            
             }
           }
         ]
-      }*/
+      } 
     ]
   },
   plugins: [
     // cleaning up only 'dist' folder
-    new CleanWebpackPlugin(['dist']),
+    //new CleanWebpackPlugin(['dist']),
+    new StyleLintPlugin({ syntax: 'scss' }),
+    new MiniCssExtractPlugin({
+      filename: "style.css"
+    }),
     new HtmlWebpackPlugin({
       template: 'src/index.html'
-    }),
+    })
     // This makes it possible for us to safely use env vars on our code
     //new webpack.DefinePlugin({
       //'process.env.ASSET_PATH': JSON.stringify(ASSET_PATH)

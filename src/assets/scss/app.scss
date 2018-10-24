@@ -1,3 +1,15 @@
 body {
     background: #a1dae3 url("../media/webpacklogo.png") repeat;
+
+    div {
+        background: orange;
+
+        @media (min-width: 600px) {
+            background: yellow;
+        }
+    }
+}
+
+h1 {
+    color: pink;
 }

@@ -1,5 +1,5 @@
 # Webpack 4 Boilerplate for beginners
-A basic webpack 4 boilerplate for beginners to start with any JS/ES6 based project. This project uses basic html with scss. It includes working background images in scss as well as file loading in html. Uses Dev Server and Sourcemaps for easy debugging. 
+A basic webpack 4 boilerplate for beginners to start with any JS/ES6 based project. This project uses basic html with scss. It includes working background images in scss as well as file loading in html. Uses Dev Server and Sourcemaps for easy debugging. Includes stylelinting and fixes for cleaner css.  
 <br>
 ## Guide
 This basic boilerplate is the final output of this comprehensive write up on Medium, plus several additions. I recommend to read this article to know the insight of how you can configure webpack from scratch.
@@ -67,7 +67,6 @@ Note: it is safe to move from dev to build and build to dev. Just run [control] 
 ## Loaders and Plugins used in this boilerplate
 
 ### Loaders
-* babel-loader
 * html-loader
 * sass-loader
 * css-loader
@@ -78,4 +77,5 @@ Note: it is safe to move from dev to build and build to dev. Just run [control] 
 * clean-webpack-plugin
 * mini-css-extract-plugin
 * html-webpack-plugin
+* style-lint-plugin
 

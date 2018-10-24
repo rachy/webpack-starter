@@ -72,10 +72,13 @@ Note: it is safe to move from dev to build and build to dev. Just run [control] 
 * css-loader
 * style-loader
 * file-loader
+* babel-loader
 
 ### Plugins
 * clean-webpack-plugin
 * mini-css-extract-plugin
 * html-webpack-plugin
 * style-lint-plugin
+* optimize-css-assets-webpack-plugin
+* uglify-js-plugin
 

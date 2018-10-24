@@ -1,5 +1,6 @@
 const webpack = require('webpack'),
       path = require('path'),
+      CleanWebpackPlugin = require('clean-webpack-plugin'),
       StyleLintPlugin = require('stylelint-webpack-plugin'),
       HtmlWebpackPlugin = require('html-webpack-plugin');
 
@@ -11,23 +12,19 @@ module.exports = {
     publicPath: 'http://localhost:2000/'
   },
   module: {
-    rules: [
-      {
+    rules: [{
         test: /\.html$/, 
-        use: [
-          {
+        use: [{
             loader: "html-loader",
             options: {
               attrs: [':src']
             }
-          }
-        ]  
+          }]  
       },
       {
         test: /\.scss$/,
         include: [path.resolve(__dirname, 'src', 'assets/scss')],
-        use: [
-          {
+        use: [{
             loader: "style-loader",
             options: {
               sourceMap: true
@@ -42,36 +39,26 @@ module.exports = {
             options: {
               sourceMap: true
             }
-          }
-        ]
+        }]
       },
       {
         test: /\.(png|jpg|gif|svg|mp4|mov|mp3|ogg|avi|)$/,
-        use: [
-          {
+        use: [{
             loader: 'file-loader',
             options: {
               name: '[path][name].[ext]',
               outputPath: ''
             }
-          }
-        ]
-      } 
-    ]
+        }]
+    }]
   },
   plugins: [
-    new HtmlWebpackPlugin(
-      {
-        template: 'src/index.html'
-      }
-    ),
-    new StyleLintPlugin(
-      { 
+    new CleanWebpackPlugin(['dist']),
+    new HtmlWebpackPlugin({template: 'src/index.html'}),
+    new StyleLintPlugin({ 
         syntax: 'scss', 
         fix: true 
-      }
-    )
-
+      })
   ],
   devServer: {
     contentBase: path.resolve(__dirname, "./dist/assets/media"),

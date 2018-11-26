@@ -42,8 +42,8 @@ $ npm run dev
 ```
 $ npm run dev
 ```
-
-In your browser, navigate to: [http://localhost:2000/](http://localhost:2000/)
+Note: If your development browser window gets closed, you can find your project by navigating to:
+[http://localhost:2000/](http://localhost:2000/)
 
 ## For Production version
 

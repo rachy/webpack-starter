@@ -5,13 +5,13 @@ A basic webpack 4 boilerplate for beginners to start with any JS/ES6 based proje
 This basic boilerplate is the final output of this comprehensive write up on Medium, plus several additions. I recommend to read this article to know the insight of how you can configure webpack from scratch.
 [Webpack 3 quickstarter: Configure webpack from scratch](https://medium.com/@nirjhor123/webpack-3-quickstarter-configure-webpack-from-scratch-30a6c394038a)
 <br>
-1. Navigate to the appropriate folder. This example uses the a folder on the desktop called "class projects" folder. NOTE: Start from your home directory "~".
+1. Navigate to the appropriate parent folder of where your project will be located. This example uses a folder on the desktop called "class projects". NOTE: Start from your home directory "~".
 
 ```
-$ cd "desktop/my-project"
+$ cd desktop/class-projects
 ```
 
-2. Clone the webpack-starter into your "class projects" folder with the following command:
+2. Clone the webpack-starter into your parent folder with the following command:
 
 ```
 $ git clone https://github.com/rachy/webpack-starter.git
